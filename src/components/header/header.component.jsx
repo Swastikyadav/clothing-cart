@@ -4,12 +4,14 @@ import { connect } from "react-redux";
 // connect is a HOC, takes component as argument and returns mofified component.
 
 import { auth } from "../../firebase/firebase.utils";
+import CartIcon from "../cart-icon/cart-icon.component";
+import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 
 import "./header.styles.scss";
 
-function Header({ currentUser }) {
+function Header({ currentUser, hidden }) {
   return (
     <div className="header">
       <Link to="/" className="logo-container">
@@ -31,14 +33,17 @@ function Header({ currentUser }) {
             SIGNIN
           </Link>
         )}
+        <CartIcon />
       </div>
+      {hidden ? null : <CartDropdown />}
     </div>
   );
 }
 
 const mapStateToProps = state => {
   return {
-    currentUser: state.user.currentUser
+    currentUser: state.user.currentUser,
+    hidden: state.cart.hidden
   };
 };
 
