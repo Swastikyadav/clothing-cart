@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+// connect is a HOC, takes component as argument and returns mofified component.
 
 import { auth } from "../../firebase/firebase.utils";
 
@@ -34,4 +36,10 @@ function Header({ currentUser }) {
   );
 }
 
-export default Header;
+const mapStateToProps = state => {
+  return {
+    currentUser: state.user.currentUser
+  };
+};
+
+export default connect(mapStateToProps)(Header);

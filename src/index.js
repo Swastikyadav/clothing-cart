@@ -1,14 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
+// Browser router provides app all routing functionalities.
+import { Provider } from "react-redux";
+// This provider is a component that we want to wrap around our entire App.
+
+import store from "./redux/store";
 
 import "./index.css";
 import App from "./App";
 
 ReactDOM.render(
-  // Browser router provides app all routing functionalities.
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+  <Provider store={store}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Provider>,
   document.getElementById("root")
 );
