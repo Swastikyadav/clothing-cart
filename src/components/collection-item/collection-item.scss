@@ -5,6 +5,8 @@
   height: 350px;
   align-items: center;
   position: relative;
+  margin-bottom: 50px;
+  justify-content: space-between;
 
   .image {
     width: 100%;
@@ -36,5 +38,9 @@
     .price {
       width: 10%;
     }
+  }
+
+  @media all and (max-width: 700px) {
+    width: 100%;
   }
 }

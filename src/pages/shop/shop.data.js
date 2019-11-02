@@ -251,39 +251,39 @@ const SHOP_DATA = [
     items: [
       {
         id: 36,
-        name: "Camo Down Vest",
-        imageUrl: "https://i.ibb.co/xJS0T3Y/camo-vest.png",
-        price: 325
+        name: "Girls Frok",
+        imageUrl: "https://i.ibb.co/QmnchSH/girls-frok.png",
+        price: 49
       },
       {
         id: 37,
-        name: "Floral T-shirt",
-        imageUrl: "https://i.ibb.co/qMQ75QZ/floral-shirt.png",
-        price: 20
+        name: "Boy Shirt",
+        imageUrl: "https://images.pexels.com/photos/1416736/pexels-photo-1416736.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        price: 25
       },
       {
         id: 38,
-        name: "Black & White Longsleeve",
-        imageUrl: "https://i.ibb.co/55z32tw/long-sleeve.png",
-        price: 25
+        name: "Casual Wears",
+        imageUrl: "https://images.pexels.com/photos/35188/child-childrens-baby-children-s.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        price: 60
       },
       {
         id: 39,
-        name: "Pink T-shirt",
-        imageUrl: "https://i.ibb.co/RvwnBL8/pink-shirt.png",
-        price: 25
+        name: "Warm Socks",
+        imageUrl: "https://images.pexels.com/photos/325867/pexels-photo-325867.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        price: 44
       },
       {
         id: 40,
-        name: "Jean Long Sleeve",
-        imageUrl: "https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png",
-        price: 40
+        name: "Winter Jacket and Hat",
+        imageUrl: "https://images.pexels.com/photos/2533326/pexels-photo-2533326.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        price: 325
       },
       {
         id: 41,
-        name: "Burgundy T-shirt",
-        imageUrl: "https://i.ibb.co/mh3VM1f/polka-dot-shirt.png",
-        price: 25
+        name: "Lether Jacket",
+        imageUrl: "https://images.pexels.com/photos/3147216/pexels-photo-3147216.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        price: 35
       }
     ]
   }

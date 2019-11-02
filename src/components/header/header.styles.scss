@@ -22,5 +22,16 @@
         padding: 10px 15px;
         cursor: pointer;
       }
+
+      @media all and (max-width: 700px) {
+        margin: 0 auto;
+        justify-content: center;
+      }
+    }
+
+    @media all and (max-width: 700px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }

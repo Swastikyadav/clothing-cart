@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import "./App.css";
 
 import Header from "./components/header/header.component";
+import CollectionCategory from "./components/collection-category/collection-category.component";
 
 import HomePage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
@@ -12,6 +13,8 @@ import Auth from "./pages/auth/auth.component";
 import CheckoutPage from "./pages/checkout/checkout.component";
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/user.action";
+
+import SHOP_DATA from "./pages/shop/shop.data";
 
 class App extends React.Component {
   unsubscribeFromAuth = null;
@@ -45,7 +48,7 @@ class App extends React.Component {
         <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route path="/shop" component={ShopPage} />
+          <Route exact path="/shop" component={ShopPage} />
           <Route exact path="/checkout" component={CheckoutPage} />
           <Route
             path="/signin"
@@ -53,6 +56,7 @@ class App extends React.Component {
               this.props.currentUser ? <Redirect to="/" /> : <Auth />
             }
           />
+          <Route exact path="/shop/:category" render={() => <CollectionCategory items={SHOP_DATA} />} />
         </Switch>
       </>
     );
